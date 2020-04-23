@@ -1,0 +1,26 @@
+{
+  "name": "ReactNativeMoEngage",
+  "version": "5.0.0",
+  "description": "MoEngage is a mobile marketing automation company. This react-native SDK helps you track events, trigger smart notifications and in-apps, provides a drop-in Inbox Controller for notifications.",
+  "summary": "A React Native plugin for implementation of MoEngage-iOS-SDK.",
+  "homepage": "http://www.moengage.com",
+  "license": "ISC",
+  "authors": "MoEngage Inc.",
+  "source": {
+    "file": "./"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MoEReactBridge/**/*.{h,m}",
+  "dependencies": {
+    "React": [
+
+    ],
+    "MoEngage-iOS-SDK": [
+      ">=5.2.6",
+      "< 6.0"
+    ]
+  },
+  "prepare_command": "echo // Generated file, do not edit > MoEReactBridge/MOReactPluginInfo.h\necho \"#define MO_REACT_PLUGIN_VERSION @\\\"5.0.0\\\"\" >> MoEReactBridge/MOReactPluginInfo.h"
+}
